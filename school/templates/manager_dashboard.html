@@ -1,0 +1,82 @@
+{% include 'header.html' %}
+
+<div class="container" style="margin-top: 20px;">
+    <h1>Welcome, {{ username }}!</h1>
+    <h3>Role: {{ role }}</h3>
+
+    <div class="row" style="margin-top: 20px;">
+        <!-- Teachers Panel -->
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Teachers</div>
+                <div class="panel-body">
+                    <p>Total Teachers: {{ total_teachers }}</p>
+                    <a href="{% url 'all-teachers' %}" class="btn btn-info btn-sm">View</a>
+                    <a href="{% url 'addteacher' %}" class="btn btn-success btn-sm">Add Teacher</a>
+                </div>
+            </div>
+        </div>
+<style>
+body {
+        background-color: #f5f6fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1, h3 {
+        color: #2c3e50;
+    }
+
+    .panel {
+        border-radius: 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    .panel-heading {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        background-color: #3498db !important;  /* primary blue */
+        color: #fff !important;
+        border-radius: 8px 8px 0 0;
+        padding: 12px 15px;
+    }
+
+    .panel-body {
+        padding: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .panel-body p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    .panel-body .btn {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .container h1 {
+        margin-top: 20px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .container h3 {
+        color: #34495e;
+        font-weight: 500;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+        .panel-body .btn {
+            margin-bottom: 10px;
+        }
+    }
+
+</style>
