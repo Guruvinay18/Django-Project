@@ -28,11 +28,6 @@ The project demonstrates core backend development concepts including database in
 ### Admin Panel
 ![Admin Panel](admin.png)
 
-### Database Records
-![Database](database.png)
-
----
-
 ## ⚙️ Installation & Setup
 
 1. Clone the repository:
