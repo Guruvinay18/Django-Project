@@ -1,45 +1,97 @@
 # 🏫 School Management System (Django)
 
-## 📌 Overview
-This is a backend web application developed using Django to efficiently manage school-related data such as student records, staff details, and administrative operations.
-
-The project demonstrates core backend development concepts including database integration, CRUD operations, and Django admin functionality.
+A web-based School Management System built using Django that allows administrators to manage teacher records efficiently. The application supports full CRUD operations with a clean and user-friendly interface.
 
 ---
 
 ## 🚀 Features
-- Add, update, and delete student records (CRUD operations)
-- Admin dashboard for managing data
-- Database integration using SQLite/MySQL
-- Structured and scalable backend architecture
-- Secure data handling using Django framework
+
+* ➕ Add new teachers
+* 📋 View teacher records
+* ✏️ Update teacher details
+* ❌ Delete teacher records
+* 🖼️ Upload teacher images
+* 📊 Responsive and clean UI
 
 ---
 
-## 🛠 Tech Stack
-- **Backend:** Python, Django  
-- **Database:** SQLite / MySQL  
-- **Tools:** VS Code, GitHub  
+## 🛠️ Tech Stack
+
+* **Backend:** Django (Python)
+* **Frontend:** HTML, CSS, Bootstrap
+* **Database:** SQLite
 
 ---
 
 ## 📸 Screenshots
 
-### Admin Panel
-![Admin Panel](admin.png)
+### 📋 Teacher Management (Database Records)
+
+![Teachers](teachers.png)
+
+### ➕ Add New Teacher Form
+
+![Add Teacher](add-teacher.png)
+
+---
 
 ## ⚙️ Installation & Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Guruvinay18/Django-Project.git
-2. Navigate to the project directory:
-    cd Django-Project
-3. Install dependencies:
-   pip install django
-4. Run migrations:
-   python manage.py migrate
-5. Start the server:
-   python manage.py runserver
-6. Open in browser:
-    http://127.0.0.1:8000/
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/Guruvinay18/Django-Project.git
+
+# Navigate to project folder
+cd Django-Project
+
+# Create virtual environment (optional)
+python -m venv venv
+
+# Activate virtual environment
+venv\Scripts\activate   # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Apply migrations
+python manage.py migrate
+
+# Run the server
+python manage.py runserver
+```
+
+---
+
+## 📌 Usage
+
+* Open browser and go to: `http://127.0.0.1:8000/`
+* Use the interface to manage teacher records
+* Perform Create, Read, Update, and Delete operations
+
+---
+
+## 🎯 Key Highlights
+
+✔ Full CRUD functionality implemented
+✔ Clean UI with Bootstrap
+✔ Image upload feature included
+✔ Real-time database interaction
+
+---
+
+## 🔮 Future Improvements
+
+* Student management module
+* Deployment on cloud (AWS / Render)
+
+---
+
+## 👨‍💻 Author
+
+**Guru Vinay**
+GitHub: https://github.com/Guruvinay18
+
+---
+ 
